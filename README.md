@@ -2,14 +2,14 @@
 
 This project implements **self-organizing embodied learners with autopoietic constraints** - demonstrating how energy limitations create measurable survival-intelligence tradeoffs in artificial agents.
 
-## 🎯 Core Principle: Landauer's Principle in Action
+## Core Principle: Landauer's Principle in Action
 
 **Every computation costs energy.** This implementation creates agents that must genuinely balance:
 - **Survival**: Finding food sources to maintain energy
 - **Intelligence**: Learning requires energy above survival threshold
 - **Efficiency**: Resource scarcity forces optimal behavioral strategies
 
-### 📁 Implementation Structure
+### Implementation Structure
 
 ```
 autopoietic_agent/
@@ -27,7 +27,7 @@ autopoietic_agent/
 └── README.md                   # This file
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Setup
 ```bash
@@ -45,7 +45,7 @@ python demo_autopoiesis.py
 jupyter notebook autopoietic_demo.ipynb
 ```
 
-## 🧠 Key Components
+## Key Components
 
 ### AutopoieticAgent Class
 - **Energy System**: Starts with 100 energy, decays over time
@@ -65,7 +65,7 @@ if energy > threshold:
     agent.learn(obs, action_logits, action_idx, reward)  # Costs energy, only when viable
 ```
 
-## 📊 Measurable Dynamics
+## Measurable Dynamics
 
 ### Key Metrics Tracked
 - **Survival Time**: Steps before energy depletion
@@ -73,7 +73,7 @@ if energy > threshold:
 - **Feeding Efficiency**: Food consumed per timestep
 - **Energy-Learning Correlation**: Relationship between resources and cognition
 
-### Expected Results ✅ **VALIDATED**
+### Expected Results - VALIDATED
 - **Survival Time**: 600-1000 steps depending on energy constraints
 - **Learning Ratio**: 30-100% of the time based on resource availability
 - **Energy-Learning Correlation**: Strong positive correlation (r = 0.84-0.86)
@@ -81,7 +81,7 @@ if energy > threshold:
 - **Food Finding**: Both agents consistently find 3-7 food items per trial
 - **Statistical Significance**: Reproducible results across multiple trials (n=3+)
 
-## 🔬 Experimental Validation
+## Experimental Validation
 
 ### Energy Constraint Experiment
 Compare agents under different resource conditions:
@@ -94,12 +94,12 @@ scenarios = {
 }
 ```
 
-### Key Finding: **Scarcity → Efficiency** ✅ **CONFIRMED**
+### Key Finding: **Scarcity → Efficiency** - CONFIRMED
 Agents with moderate resource scarcity develop measurably more efficient feeding behaviors than those with abundant resources, validating core autopoietic principles.
 
 **Validated Results**: Poor agents achieve 22.2% higher feeding efficiency than rich agents (1.22 efficiency ratio), demonstrating emergence of adaptive optimization under resource pressure.
 
-## 📈 Visualization Suite
+## Visualization Suite
 
 ### Generated Analysis (Saved to `results/` directory)
 - **Energy Evolution**: Real-time energy levels with learning thresholds
@@ -110,7 +110,7 @@ Agents with moderate resource scarcity develop measurably more efficient feeding
 - **Emergence Demonstration**: Side-by-side comparison of rich vs poor agent performance
 - **Statistical Validation**: Multi-trial analysis with error bars and significance testing
 
-## 🔧 Technical Implementation
+## Technical Implementation
 
 ### Dependencies
 - **PyBullet**: Physics simulation and embodied environment
@@ -127,7 +127,7 @@ learning_threshold = 50.0   # Minimum energy for learning
 landauer_cost = 0.01        # Base computational cost
 ```
 
-## 🎯 Scientific Contributions
+## Scientific Contributions
 
 ### Autopoietic Theory Implementation
 1. **Self-Maintenance**: Agents must actively maintain viability through environmental interaction
@@ -141,9 +141,9 @@ landauer_cost = 0.01        # Base computational cost
 - **H3**: Strong correlation exists between available energy and learning capability
 - **H4**: Autopoietic dynamics are quantifiable through survival and efficiency metrics
 
-## 🎯 **BREAKTHROUGH: Emergence Experiment Success**
+## BREAKTHROUGH: Emergence Experiment Success
 
-### ✅ **Working Emergence Detection**
+### Working Emergence Detection
 After systematic parameter optimization and food-finding improvements, the emergence experiment now reliably demonstrates **measurable autopoietic self-organization**:
 
 ```bash
@@ -167,17 +167,17 @@ python final_emergence_test.py
 - **Mild Emergence**: Efficiency ratio > 1.05 (5%+ advantage)  
 - **Experimental Validity**: Both agents find food, sufficient learning opportunities, reasonable constraints
 
-## 🔬 Complete Experimental Validation
+## Complete Experimental Validation
 
 ### Validation Summary
-- ✅ **Energy-gated learning**: Confirmed strong correlation (r=0.84-0.86) between energy and learning activity
-- ✅ **Survival-intelligence tradeoff**: Measured clear resource allocation decisions  
-- ✅ **Emergent efficiency**: Resource-constrained agents develop superior feeding strategies (22.2% improvement)
-- ✅ **Quantifiable autopoiesis**: All theoretical predictions supported by empirical data
-- ✅ **Statistical rigor**: Multi-trial validation with experimental controls
-- ✅ **Reproducible emergence**: Consistent results across parameter configurations
+- **Energy-gated learning**: Confirmed strong correlation (r=0.84-0.86) between energy and learning activity
+- **Survival-intelligence tradeoff**: Measured clear resource allocation decisions  
+- **Emergent efficiency**: Resource-constrained agents develop superior feeding strategies (22.2% improvement)
+- **Quantifiable autopoiesis**: All theoretical predictions supported by empirical data
+- **Statistical rigor**: Multi-trial validation with experimental controls
+- **Reproducible emergence**: Consistent results across parameter configurations
 
-## 🚀 Usage Examples
+## Usage Examples
 
 ### Basic Agent Creation
 ```python
@@ -194,7 +194,7 @@ stats = agent.get_survival_stats()
 python final_emergence_test.py
 
 # Expected output:
-# ✅ STRONG EMERGENCE DETECTED!
+# STRONG EMERGENCE DETECTED!
 #    The Jupyter notebook will demonstrate measurable autopoietic dynamics
 #    Efficiency ratio: 1.22
 ```
@@ -214,7 +214,7 @@ from demo_autopoiesis import run_energy_constraint_experiment
 results = run_energy_constraint_experiment()
 ```
 
-## 🎛️ Configuration Options
+## Configuration Options
 
 ### Energy Parameters
 - `energy_decay`: Rate of natural energy loss
@@ -230,7 +230,7 @@ results = run_energy_constraint_experiment()
 - Food respawn mechanics (immediate respawn in new location)
 - Physics simulation parameters
 
-## 🔧 **Working Configurations & Troubleshooting**
+## Working Configurations & Troubleshooting
 
 ### **Validated Emergence Parameters** (from `CORRECT_PARAMETERS.md`):
 
@@ -252,17 +252,17 @@ max_steps = 1000                        # Adequate simulation time
 
 ### **Common Issues & Solutions**:
 
-#### **❌ "No emergence detected"**
+#### **"No emergence detected"**
 - **Cause**: Parameters too severe → starvation instead of adaptive pressure
 - **Solution**: Use moderate scarcity parameters above, avoid extreme values
 - **Check**: Poor agent learning ratio should be >30%, rich agent >60%
 
-#### **❌ "Insufficient food consumption"**  
+#### **"Insufficient food consumption"**  
 - **Cause**: Simulation too short or exploration parameters suboptimal
 - **Solution**: Use `max_steps=1000` minimum, check epsilon=0.5 initial exploration
 - **Check**: Both agents should find ≥1 food item consistently
 
-#### **❌ "Inconsistent results"**
+#### **"Inconsistent results"**
 - **Cause**: High variance in food-finding due to random placement
 - **Solution**: Run multiple trials (n≥3), use statistical averaging
 - **Check**: Results should be reproducible across trials
@@ -273,7 +273,7 @@ max_steps = 1000                        # Adequate simulation time
 - **Learning Threshold**: 25-75 range, balance accessibility vs constraint
 - **Simulation Time**: 1000+ steps for reliable food finding
 
-## 📚 Theoretical Foundation
+## Theoretical Foundation
 
 This implementation directly validates concepts from:
 - **Maturana & Varela**: Autopoiesis and structural coupling
@@ -281,7 +281,7 @@ This implementation directly validates concepts from:
 - **Embodied Cognition**: Intelligence shaped by physical constraints
 - **Active Inference**: Energy-efficient environmental sampling
 
-## 🤝 Research Applications
+## Research Applications
 
 ### Immediate Extensions
 1. **Multi-agent autopoiesis**: Resource competition and cooperation
@@ -295,7 +295,7 @@ This implementation directly validates concepts from:
 - Creates foundation for energy-aware AI systems
 - Bridges theoretical autopoiesis with computational implementation
 
-## ⚖️ Academic Rigor
+## Academic Rigor
 
 This implementation focuses on:
 - **Measurable dynamics** rather than consciousness claims
@@ -307,7 +307,7 @@ This implementation focuses on:
 
 ---
 
-## 🎯 **Summary: Validated Autopoietic Self-Organization**
+## Summary: Validated Autopoietic Self-Organization
 
 **FINDINGS**: Successfully demonstrated **measurable emergence of efficiency** (22.2% improvement) when artificial agents face genuine energy-intelligence tradeoffs under moderate resource scarcity.
 
@@ -316,11 +316,11 @@ This implementation focuses on:
 **FOUNDATION**: Provides working experimental framework for studying embodied intelligence, energy-aware AI, and computational implementation of self-organizing systems under thermodynamic constraints.
 
 ### **Key Achievements**:
-- ✅ **Strong emergence detection**: 1.22 efficiency ratio (22.2% advantage for constrained agents)
-- ✅ **Statistical validation**: Reproducible across multiple trials with experimental controls  
-- ✅ **Energy-intelligence correlation**: Confirmed r=0.84-0.86 correlation between energy and learning
-- ✅ **Working parameter set**: Documented in `CORRECT_PARAMETERS.md` for reliable replication
-- ✅ **Organized outputs**: All results saved to structured `results/` directory
-- ✅ **Comprehensive tooling**: Jupyter notebook, test scripts, and visualization suite
+- **Strong emergence detection**: 1.22 efficiency ratio (22.2% advantage for constrained agents)
+- **Statistical validation**: Reproducible across multiple trials with experimental controls  
+- **Energy-intelligence correlation**: Confirmed r=0.84-0.86 correlation between energy and learning
+- **Working parameter set**: Documented in `CORRECT_PARAMETERS.md` for reliable replication
+- **Organized outputs**: All results saved to structured `results/` directory
+- **Comprehensive tooling**: Jupyter notebook, test scripts, and visualization suite
 
 **IMPACT**: Working demonstration of computationally tractable autopoietic emergence in energy-constrained embodied artificial agents with statistical validation.

@@ -1,0 +1,20 @@
+# Autopoietic Agent Requirements
+# Core dependencies for energy-constrained embodied learning
+
+# Physics simulation
+pybullet>=3.2.5
+
+# Neural networks and learning
+torch>=1.12.0
+numpy>=1.21.0
+
+# Visualization and analysis
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Jupyter notebook support (optional)
+jupyter>=1.0.0
+ipywidgets>=7.6.0
+
+# Optional: for enhanced physics features
+# gymnasium>=0.26.0  # If extending to Gym environments

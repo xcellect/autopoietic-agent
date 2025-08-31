@@ -1,0 +1,23 @@
+# Results directory - generated outputs
+# results/*.png
+# results/*.gif
+# results/*.pdf
+# results/*.csv
+# results/*.json
+
+# Keep the directory structure but not the files
+!results/.gitkeep
+
+# PyBullet cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# MacOS
+.DS_Store
